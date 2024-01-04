@@ -20,9 +20,10 @@ const [thumbnail, setThumbnail] = useState('');
       var imageUrl = image.webPath;
       
       let imageElement = new Image();
-      if (imageUrl != null)
-      imageElement.src = imageUrl;
-    setThumbnail(imageElement.src);
+      if (imageUrl != null) {
+        imageElement.src = imageUrl;
+        setThumbnail(imageElement.src);
+      }
 
     } catch (error) {
       console.log('error')
